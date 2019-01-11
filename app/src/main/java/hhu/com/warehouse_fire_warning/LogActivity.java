@@ -1,10 +1,13 @@
 package hhu.com.warehouse_fire_warning;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import org.litepal.LitePal;
 
@@ -40,6 +43,8 @@ public class LogActivity extends AppCompatActivity {
         adapter = new LogAdapter(LogActivity.this, logList);
         listView.setAdapter(adapter);
         listView.setTextFilterEnabled(true);
+
+        Toast.makeText(LogActivity.this, "邮件发送失败", Toast.LENGTH_SHORT).show();
 
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             //点击搜索按钮触发的方法

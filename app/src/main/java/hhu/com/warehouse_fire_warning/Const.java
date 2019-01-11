@@ -22,7 +22,7 @@ public class Const {
 
     // 风机
     public static String FAN_ON = "01 10 00 48 00 01 02 00 01 68 18";
-    public static String FAN_OFF = "01 10 00 48 00 01 02 01 02 28 19";
+    public static String FAN_OFF = "01 10 00 48 00 01 02 00 02 28 19";
     public static boolean isFanOn = false;
 
     // IP端口
